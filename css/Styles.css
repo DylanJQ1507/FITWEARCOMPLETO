@@ -8,9 +8,7 @@ main {
     padding-bottom: 50px;
 }
 
-.btn {
-    background-color: #6bbce2 !important;
-}
+
 
 .navbar {
     font-family: "Bona Nova SC";
@@ -27,18 +25,28 @@ main {
         margin: 0 auto;
     }
 }
-footer{
-    background-color:#6bbce2 ;
+
+footer {
+    background-color: #6bbce2;
     bottom: 0px;
+    margin-right: 0;
+
+    margin-left: 0px;
 }
+
 .card {
-    box-shadow: 0px 0px 10px 0px #7EBBC9;
+    box-shadow: 0px 0px 10px 0px #7ebbc9;
     transition: box-shadow 0.3s ease-in-out;
     animation: aparecer both;
     animation-timeline: view(block);
     animation-timing-function: linear;
     animation-range: cover 0% cover 25%;
 
+}
+
+footer div {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .texto {
@@ -54,11 +62,15 @@ footer{
 
 .carousel-control-next-icon {
     background-color: black;
+    border-radius: 50%;
+
 
 }
 
 .carousel-control-prev-icon {
     background-color: black;
+    border-radius: 50%;
+
 }
 
 .box {
@@ -132,7 +144,16 @@ footer{
     .box3 {
         border-right-style: none;
     }
-main{
-padding-bottom: 100px;
+
+    main {
+        padding-bottom: 100px;
+    }
 }
+
+select {
+    background-color: transparent !important;
+    border-color: #6bbce2 !important;
 }
+option {
+    background-color:6bbce2 !important;
+    }
