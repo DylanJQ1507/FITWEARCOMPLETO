@@ -14,7 +14,7 @@ const clothes = [
         "garantia": "1 MES",
         "subdescription": "6 COLORES",
         "talla": " S M L",
-        "categories": ["Mas vendidos", "licras", "gymshark", "mujer"]
+        "categories": ["MAS VENDIDOS", "LICRAS", "GYMSHARK", "MUJER"]
     },
     {
         "_id": 2,
@@ -31,7 +31,7 @@ const clothes = [
         "garantia": "1 MES",
         "subdescription": "5 COLORES",
         "talla": " S M L",
-        "categories": ["Mas vendidos", "Duos Deportivos", "nike", "mujer"]
+        "categories": ["MAS VENDIDOS", "DUOS DEPORTIVOS", "NIKE", "MUJER"]
     },
     {
         "_id": 3,
@@ -48,7 +48,7 @@ const clothes = [
         "garantia": "1 MES",
         "subdescription": "8 PIEZAS",
         "talla": " S M L",
-        "categories": ["Mas vendidos", "SETS", "nike", "mujer"]
+        "categories": ["MAS VENDIDOS", "SETS", "NIKE", "MUJER"]
     },
     {
         "_id": 4,
@@ -65,7 +65,7 @@ const clothes = [
         "garantia": "1 MES",
         "subdescription": "5 PIEZAS",
         "talla": " S M L",
-        "categories": ["Mas vendidos", "SETS", "gymshark", "mujer"]
+        "categories": ["MAS VENDIDOS", "SETS", "GYMSHARK", "MUJER"]
     },
     {
         "_id": 5,
@@ -83,7 +83,7 @@ const clothes = [
         "garantia": "1 MES",
         "subdescription": "Color Blanco",
         "talla": " Unica",
-        "categories": ["Promocion", "Accesorios", "gymshark", "Gorra"]
+        "categories": ["PROMOCION", "ACCESORIOS", "GYMSHARK", "GORRAS"]
     },
     {
         "_id": 6,
@@ -101,7 +101,7 @@ const clothes = [
         "garantia": "1 MES",
         "subdescription": "LICRA LARGA S M L",
         "talla": " Unica",
-        "categories": ["Promocion", "Duos Deportivos", "nike", "mujer"]
+        "categories": ["PROMOCION", "DUOS DEPORTIVOS", "NIKE", "MUJER"]
     },
     {
         "_id": 7,
@@ -119,7 +119,97 @@ const clothes = [
         "garantia": "1 MES",
         "subdescription": "S M L",
         "talla": " S M L",
-        "categories": ["Promocion", "Duos Deportivos", "mujer"]
+        "categories": ["PROMOCION", "DUOS DEPORTIVOS", "MUJER"]
+    },
+    {
+        "_id": 8,
+        "name": "PANTALONETA NAUTICA W",
+        "imgprincipalUrl": "img/Pantablanca.png",
+        "price": 12000,
+        "pricepromo": 0,
+        "stock": "Disponible",
+        "description": "Colocar aca descripcion, son tela buz en talla s m y l",
+        "imgsecundary": "img/Pantablanca.png",
+        "tiempoEntrega": "3 DIAS",
+        "gastoenvio": 3000,
+        "valoracion": "⭐⭐⭐⭐",
+        "envio": ["Envio Postal", "Recogida en tienda"],
+        "garantia": "1 MES",
+        "subdescription": "S M L",
+        "talla": " S M L",
+        "categories": ["PANTALONETAS", "HOMBRE"]
+    },
+    {
+      "_id": 9,
+        "name": "PANTALONETA HUGO BOSS",
+        "imgprincipalUrl": "img/pantaAzul.png",
+        "price": 12000,
+        "pricepromo": 0,
+        "stock": "Disponible",
+        "description": "Colocar aca descripcion, son tela buz en talla s m y l",
+        "imgsecundary": "img/pantaAzul.png",
+        "tiempoEntrega": "3 DIAS",
+        "gastoenvio": 3000,
+        "valoracion": "⭐⭐⭐",
+        "envio": ["Envio Postal", "Recogida en tienda"],
+        "garantia": "1 MES",
+        "subdescription": "AZUL",
+        "talla": " S M L",
+        "categories": ["PANTALONETAS", "HOMBRE"]  
+    },
+    {
+      "_id": 10,
+        "name": "PANTALONETA NAUTICA AZUL",
+        "imgprincipalUrl": "img/pantaNauticaAzul.png",
+        "price": 12000,
+        "pricepromo": 0,
+        "stock": "Disponible",
+        "description": "Colocar aca descripcion, son tela buz en talla s m y l",
+        "imgsecundary": "img/pantaAzul.png",
+        "tiempoEntrega": "3 DIAS",
+        "gastoenvio": 3000,
+        "valoracion": "⭐⭐⭐",
+        "envio": ["Envio Postal", "Recogida en tienda"],
+        "garantia": "1 MES",
+        "subdescription": "AZUL",
+        "talla": "S M L",
+        "categories": ["PANTALONETAS", "HOMBRE"]    
+    },
+    {
+       "_id": 11,
+        "name": "PANTALONETA NIKE NEGRA",
+        "imgprincipalUrl": "img/pantaNikenegra.png",
+        "price": 12000,
+        "pricepromo": 0,
+        "stock": "Disponible",
+        "description": "Colocar aca descripcion, son tela buz en talla s m y l",
+        "imgsecundary":"img/pantanegra2.png",
+        "tiempoEntrega": "3 DIAS",
+        "gastoenvio": 3000,
+        "valoracion": "⭐⭐⭐⭐⭐",
+        "envio": ["Envio Postal", "Recogida en tienda"],
+        "garantia": "1 MES",
+        "subdescription": "NEGRO",
+        "talla": " S M L",
+        "categories": ["PANTALONETAS", "HOMBRE"]    
+    },
+    {
+        "_id": 12,
+        "name": "SET NIKE BLANCO 8P",
+        "imgprincipalUrl": "img/setnikeblanco.png",
+        "price": 20000,
+        "pricepromo": 0,
+        "stock": "Disponible",
+        "description": "Colocar aca descripcion, son tela buz en talla s m y l",
+        "imgsecundary":"img/setnikeblanco.png",
+        "tiempoEntrega": "3 DIAS",
+        "gastoenvio": 3000,
+        "valoracion": "⭐⭐⭐⭐⭐",
+        "envio": ["Envio Postal", "Recogida en tienda"],
+        "garantia": "1 MES",
+        "subdescription": "BLANCO",
+        "talla": " S M L",
+        "categories": ["SETS", "MUJER", "NIKE"] 
     }
 
 ]
