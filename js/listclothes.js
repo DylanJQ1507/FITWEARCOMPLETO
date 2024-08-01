@@ -4,7 +4,7 @@ function DetalleProducto(id) {
 function displayclothesmoresold(data) {
   $("#clothe-list").html('')
   data.forEach((clothes) => {
-    if (clothes.categories[0] == "Mas vendidos") {
+    if (clothes.categories[0] == "MAS VENDIDOS") {
       const colclothes = document.createElement("div")
       colclothes.classList.add("col")
       const cardclothes = `<div class="col">
@@ -32,7 +32,7 @@ function displayclothesmoresold(data) {
 function displayclothespromotion(data) {
   $("#clothe-list-promo").html('')
   data.forEach((clothes) => {
-    if (clothes.categories[0] == "Promocion") {
+    if (clothes.categories[0] == "PROMOCION") {
       const cardclothes = `<div class="col">
             <div class="card">
               <img class="card-img-top" style="max-height:260px;" role="img" src="${clothes.imgprincipalUrl ? clothes.imgprincipalUrl : 'img/image-not-found.jpg'}"
