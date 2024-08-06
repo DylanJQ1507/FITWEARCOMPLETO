@@ -153,10 +153,6 @@ footer {
     padding: 86px 0;
 }
 
-.contenido-individual {
-    text-align: center;
-    padding: 115px 0;
-}
 
 .caja-individual p {
     color: #fff;
@@ -169,11 +165,6 @@ footer {
     color: #fff;
 }
 
-.caja-individual .area-tarjeta i {
-    color: #ffffff;
-    font-size: 20px;
-    margin-right: 10px;
-}
 
 .caja-individual ul {
     list-style: none;
@@ -193,11 +184,6 @@ footer {
     font-weight: 700;
 }
 
-
-.redes i {
-    font-size: 18px;
-    margin-right: 15px;
-}
 
 @media (max-width: 767px) {
     .caja-individual {
