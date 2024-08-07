@@ -61,7 +61,9 @@ main {
     border-radius: 50%;
 
 }
-
+form{
+    margin-bottom: 10px;
+}
 .box {
     border-style: solid;
     border-top-style: none;
