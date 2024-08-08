@@ -61,9 +61,11 @@ main {
     border-radius: 50%;
 
 }
-form{
+
+form {
     margin-bottom: 10px;
 }
+
 .box {
     border-style: solid;
     border-top-style: none;
@@ -190,7 +192,7 @@ footer {
 @media (max-width: 767px) {
     .caja-individual {
         margin-bottom: 50px;
-         text-align: center;
+        text-align: center;
     }
 }
 
@@ -198,13 +200,20 @@ footer {
     .caja-individual {
         margin-bottom: 50px;
         text-align: center;
-        
+
     }
 }
 
+@media (min-width: 1200px) {
+    .contenedor-grafico{
+      width: 20%;
+     
+    }
+  }
 
-
-
-
-
-
+ .centrar{
+    display: flex;
+    justify-content: center; 
+    align-items: center;   
+          
+ }
