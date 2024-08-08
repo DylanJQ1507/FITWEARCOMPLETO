@@ -1,6 +1,6 @@
 async function cargarDatos() {
     try {
-        const respuesta = await fetch('./json/marcasGrafico.json'); // Asegúrate de que 'data.json' esté en la misma carpeta que tu HTML
+        const respuesta = await fetch('/json/marcasGrafico.json'); // Asegúrate de que 'data.json' esté en la misma carpeta que tu HTML
         const datos = await respuesta.json();
         return datos;
     } catch (error) {
