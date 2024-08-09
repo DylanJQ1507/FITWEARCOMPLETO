@@ -17,16 +17,16 @@
       var email = form.querySelector('#email')
       var datebirth = form.querySelector('#datebirth')
       var genero = form.querySelector('#genero')
-      var tema=form.querySelector('#tema')
-      if (!form.checkValidity() ) {
-        if (!regex.test(name.value) || name.value=="") {
+      var tema = form.querySelector('#tema')
+      if (!form.checkValidity()) {
+        if (!regex.test(name.value) || name.value == "") {
           name.classList.remove("is-valid")
           name.classList.add("is-invalid")
         } else {
           name.classList.remove("is-invalid")
           name.classList.add("is-valid")
         }
-        if (!regex.test(lastName.value)|| lastName.value=="") {
+        if (!regex.test(lastName.value) || lastName.value == "") {
           lastName.classList.remove("is-valid")
           lastName.classList.add("is-invalid")
         } else {
@@ -45,8 +45,8 @@
         } else {
           datebirth.classList.remove("is-invalid")
           datebirth.classList.add("is-valid")
-        } if (genero.value =="0" ) {
-          
+        } if (genero.value == "0") {
+
           genero.classList.remove("is-valid")
           genero.classList.add("is-invalid")
         } else {
@@ -62,13 +62,13 @@
         }
         event.preventDefault()
         event.stopPropagation()
-      } 
-        alert("listo")
-      form.action='https://formsubmit.co/d6a7aaa38713601e79006e37b7bda120'
-      form.method='POST';
-        form.reset()
-      
-      
+      }
+      alert("listo")
+      form.action = 'https://formsubmit.co/d6a7aaa38713601e79006e37b7bda120'
+      form.method = 'POST';
+      form.reset()
+
+
 
 
     }, false)
