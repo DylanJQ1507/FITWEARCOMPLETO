@@ -46,7 +46,6 @@
           datebirth.classList.remove("is-invalid")
           datebirth.classList.add("is-valid")
         } if (genero.value == "0") {
-
           genero.classList.remove("is-valid")
           genero.classList.add("is-invalid")
         } else {
@@ -62,12 +61,25 @@
         }
         event.preventDefault()
         event.stopPropagation()
+      } else {
+        alert("listo")
+        form.action = 'https://formsubmit.co/d6a7aaa38713601e79006e37b7bda120'
+        form.method = 'POST';
+       
+        form.reset()
+        name.classList.remove("is-valid")
+        name.classList.remove("is-invalid")
+        lastName.classList.remove("is-valid")
+        lastName.classList.remove("is-invalid")
+        email.classList.remove("is-valid")
+        email.classList.remove("is-invalid")
+        datebirth.classList.remove("is-valid")
+        datebirth.classList.remove("is-invalid")
+        genero.classList.remove("is-valid")
+        genero.classList.remove("is-invalid")
+        tema.classList.remove("is-valid")
+        tema.classList.remove("is-invalid")
       }
-      alert("listo")
-      form.action = 'https://formsubmit.co/d6a7aaa38713601e79006e37b7bda120'
-      form.method = 'POST';
-      form.reset()
-
 
 
 
