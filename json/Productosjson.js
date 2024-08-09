@@ -75,7 +75,7 @@ const clothes = [
         "pricepromo": 13000,
         "stock": "Disponible",
         "description": "Gorra gymshark blanca,con ajuste personalizado, combina el estilo y entrenamiento",
-        "imgsecundary": "img/gorragymsharkw.png",
+        "imgsecundary": "img/Gorragymshark2B.jpeg",
         "tiempoEntrega": "3 DIAS",
         "gastoenvio": 3000,
         "valoracion": "⭐⭐⭐⭐",
