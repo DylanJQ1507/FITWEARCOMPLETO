@@ -93,7 +93,7 @@
 
                     <div class="col " id="nombre">
                         <label for="name" class="form-label fs-5">NOMBRE COMPLETO</label>
-                        <input type="text" class="form-control" pattern="[A-Za-z\s]+" id="name" value=""
+                        <input type="text" class="form-control " id="name" value=""
                             placeholder="DYLAN ANTONIO" name="name" required>
                         <div class="valid-feedback">
                             Looks good!
@@ -136,8 +136,8 @@
                     </div>
                     <div class="col">
                         <label for="validationCustom01" class="form-label fs-5">Genero</label>
-                        <select class="form-select" aria-label="Default select example">
-
+                        <select class="form-select" id="genero" aria-label="Default select example">
+                            <option value="0">Seleccione una opcion</option>
                             <option value="1">Mujer</option>
                             <option value="2">Hombre</option>
                             <option value="3">Prefiero no decirlo</option>
@@ -152,8 +152,8 @@
 
                     <div class="col-md-6 offset-md-3">
                         <label for="validationCustom01" class="form-label fs-5">tema de interes</label>
-                        <select class="form-select" name="subject" aria-label="Default select example">
-
+                        <select class="form-select" id="tema" name="subject" aria-label="Default select example">
+                            <option value="0">Seleccione una opcion</option>
                             <option value="Estado de mi pedido">Estado de mi pedido</option>
                             <option value="Garantia">Garantia</option>
                             <option value="Soporte tecnico">Soporte tecnico</option>
@@ -175,7 +175,7 @@
                         <button class="btn btn-light" type="submit">Submit form</button>
                     </div>
 
-                    <input type="hidden" name="_next" value="Contacto.html">
+                    <input type="hidden" name="_next" value="https://dylanjq1507.github.io/FITWEARCOMPLETO/Contacto.html">
                     <input type="hidden" name="_captcha" value="false">
                 </form>
             </div>
