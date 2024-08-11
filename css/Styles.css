@@ -217,4 +217,19 @@ footer {
     align-items: center;   
           
  }
+
+
+
+ #map {
+    width: 400px;
+    /* Tamaño del mapa */
+    height: 400px;
+    /* Tamaño del mapa */
+    border-radius: 0;
+    /* Elimina el borde redondeado */
+    overflow: hidden;
+    /* Oculta el desbordamiento */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* Sombra opcional para efecto de profundidad */
+}
  
