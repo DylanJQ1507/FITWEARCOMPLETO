@@ -33,7 +33,7 @@ $(document).ready(function () {
                 selectenvio.append(`<option value="${tipo}"> ${tipo} </option>`)
             })
             $("#garantia").text("Garantia: " + clothe.garantia)
-            var button=' <button type="button" style="margin-top:10px;" class="btn text-end btn-lg btn-outline-primary " onclick="comprarLibro(this)" data-id="${book._id}" ><i class="bi bi-cart">Comprar</button>'
+            var button=' <button type="submit" style="margin-top:10px;" class="btn text-end btn-lg btn-outline-primary " onclick="comprarLibro(this)" data-id="${book._id}" ><i class="bi bi-cart">Comprar</button>'
 
             
             $("#comprar").append(button)
