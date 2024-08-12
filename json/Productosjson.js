@@ -13,7 +13,7 @@ const clothes = [
         "envio": ["Envio Postal", "Recogida en tienda"],
         "garantia": "1 MES",
         "subdescription": "6 COLORES",
-        "talla": " S M L",
+        "talla": [ "S", "M"," L"],
         "categories": ["MAS VENDIDOS", "LICRAS", "GYMSHARK", "MUJER"]
     },
     {
@@ -30,7 +30,7 @@ const clothes = [
         "envio": ["Envio Postal", "Recogida en tienda"],
         "garantia": "1 MES",
         "subdescription": "5 COLORES",
-        "talla": " S M L",
+        "talla": [ "S", "M"," L"],
         "categories": ["MAS VENDIDOS", "DUOS DEPORTIVOS", "NIKE", "MUJER"]
     },
     {
@@ -47,7 +47,7 @@ const clothes = [
         "envio": ["Envio Postal", "Recogida en tienda"],
         "garantia": "1 MES",
         "subdescription": "8 PIEZAS",
-        "talla": " S M L",
+        "talla": [ "S", "M"," L"],
         "categories": ["MAS VENDIDOS", "SETS", "NIKE", "MUJER"]
     },
     {
@@ -64,7 +64,7 @@ const clothes = [
         "envio": ["Envio Postal", "Recogida en tienda"],
         "garantia": "1 MES",
         "subdescription": "5 PIEZAS",
-        "talla": " S M L",
+        "talla": [ "S", "M"," L"],
         "categories": ["MAS VENDIDOS", "SETS", "GYMSHARK", "MUJER"]
     },
     {
@@ -100,7 +100,7 @@ const clothes = [
         "envio": ["Envio Postal", "Recogida en tienda"],
         "garantia": "1 MES",
         "subdescription": "LICRA LARGA S M L",
-        "talla": " Unica",
+        "talla": [ "S", "M"," L"],
         "categories": ["PROMOCION", "DUOS DEPORTIVOS", "NIKE", "MUJER"]
     },
     {
@@ -118,7 +118,7 @@ const clothes = [
         "envio": ["Envio Postal", "Recogida en tienda"],
         "garantia": "1 MES",
         "subdescription": "S M L",
-        "talla": " S M L",
+        "talla": [ "S", "M"," L"],
         "categories": ["PROMOCION", "DUOS DEPORTIVOS", "MUJER"]
     },
     {
@@ -135,8 +135,8 @@ const clothes = [
         "valoracion": "⭐⭐⭐⭐",
         "envio": ["Envio Postal", "Recogida en tienda"],
         "garantia": "1 MES",
-        "subdescription": "S M L",
-        "talla": " S M L",
+        "subdescription": "COLOR BLANCO",
+        "talla": [ "S", "M"," L"],
         "categories": ["PANTALONETAS", "HOMBRE"]
     },
     {
@@ -154,7 +154,7 @@ const clothes = [
         "envio": ["Envio Postal", "Recogida en tienda"],
         "garantia": "1 MES",
         "subdescription": "AZUL",
-        "talla": " S M L",
+        "talla": [ "S", "M"," L"],
         "categories": ["PANTALONETAS", "HOMBRE"]
     },
     {
@@ -172,7 +172,7 @@ const clothes = [
         "envio": ["Envio Postal", "Recogida en tienda"],
         "garantia": "1 MES",
         "subdescription": "AZUL",
-        "talla": "S M L",
+        "talla": [ "S", "M"," L"],
         "categories": ["PANTALONETAS", "HOMBRE"]
     },
     {
@@ -190,7 +190,7 @@ const clothes = [
         "envio": ["Envio Postal", "Recogida en tienda"],
         "garantia": "1 MES",
         "subdescription": "NEGRO",
-        "talla": " S M L",
+        "talla": [ "S", "M"," L"],
         "categories": ["PANTALONETAS", "HOMBRE"]
     },
     {
@@ -208,7 +208,7 @@ const clothes = [
         "envio": ["Envio Postal", "Recogida en tienda"],
         "garantia": "1 MES",
         "subdescription": "BLANCO",
-        "talla": " S M L",
+        "talla": [ "S", "M"," L"],
         "categories": ["SETS", "MUJER", "NIKE"]
     },
     {
@@ -226,10 +226,11 @@ const clothes = [
         "envio": ["Envio Postal", "Recogida en tienda"],
         "garantia": "1 MES",
         "subdescription": "BLANCO",
-        "talla": " S M L",
+        "talla": ["S", "M", " L"],
         "categories": ["FALDAS", "MUJER", "NIKE"]
     },
-    {"_id": 14,
+    {
+        "_id": 14,
         "name": "FALDA DEPORTIVA NIKE VERDE",
         "imgprincipalUrl": "img/FaldaNV.png",
         "price": 10900,
@@ -243,7 +244,7 @@ const clothes = [
         "envio": ["Envio Postal", "Recogida en tienda"],
         "garantia": "1 MES",
         "subdescription": "BLANCO",
-        "talla": " S M L",
+        "talla": ["S", "M", " L"],
         "categories": ["FALDAS", "MUJER", "NIKE"]
     },
     {
@@ -261,7 +262,7 @@ const clothes = [
         "envio": ["Envio Postal", "Recogida en tienda"],
         "garantia": "1 MES",
         "subdescription": "BLANCO",
-        "talla": " S M L",
+        "talla": ["S", "M", " L"],
         "categories": ["FALDAS", "MUJER", "NIKE"]
     },
     {
@@ -279,7 +280,7 @@ const clothes = [
         "envio": ["Envio Postal", "Recogida en tienda"],
         "garantia": "1 MES",
         "subdescription": "BLANCO",
-        "talla": " S M L",
+        "talla": ["S", "M", " L"],
         "categories": ["FALDAS", "MUJER", "NIKE"]
     }
 

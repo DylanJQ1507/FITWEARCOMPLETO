@@ -20,7 +20,10 @@ function displayclothesmoresold(data) {
                 <hr>
                 <h1 class="card-title text-end">&cent;${clothes.price}</h1>
                 <div class="d-grid gap-2">
-                  <button type="button" class="btn btn-outline-primary " onclick="detalleLibro(${clothes._id})">VER</button>
+                  <button type="button" class="btn btn-outline-primary " onclick="DetalleProducto(${clothes._id})">VER</button>
+                </div>
+                <div class="d-grid gap-2" style="margin-top:10px">
+                  <button type="button" class="btn btn-outline-primary " onclick="detalleLibro(${clothes._id})"><i class="bi bi-cart"></i>Agregar al carrito</button>
                 </div>
               </div>
             </div>
@@ -46,7 +49,10 @@ function displayclothespromotion(data) {
                 <hr>
                 <h1 class="card-title text-end" style="font-weight:bold">&cent;${clothes.pricepromo}</h1>
                 <div class="d-grid gap-2">
-                  <button type="button" class="btn btn1 btn-outline-primary" onclick="detalleLibro(${clothes._id})">VER</button>
+                  <button type="button" class="btn btn1 btn-outline-primary" onclick="DetalleProducto(${clothes._id})">VER</button>
+                </div>
+                <div class="d-grid gap-2" style="margin-top:10px">
+                  <button type="button" class="btn btn-outline-primary " onclick="detalleLibro(${clothes._id})"><i class="bi bi-cart"></i>Agregar al carrito</button>
                 </div>
               </div>
             </div>
@@ -63,7 +69,7 @@ function displayclothes(data) {
     colclothes.classList.add("col")
     let pricePromoHtml = ''
     if (clothes.pricepromo) {
-      pricePromoHtml = `<h1 class="card-title text-end"style="font-weight:bold">&cent;${clothes.pricepromo}</h1><hr>`
+      pricePromoHtml = `<h1 class="card-title text-end"style="font-weight:bold">PROMO &cent;${clothes.pricepromo}</h1><hr>`
     }
     const cardclothes = `<div class="col">
             <div class="card">
@@ -76,11 +82,14 @@ function displayclothes(data) {
                 <hr>
                 <p class="fs-5">${clothes.talla}</p>
                 <hr>
-                <h1 class="card-title text-end">&cent;${clothes.price}</h1>
+                <h2 class="card-title text-end">&cent;${clothes.price}</h2>
                 <hr>
                  ${pricePromoHtml}
                 <div class="d-grid gap-2">
-                  <button type="button" class="btn btn-outline-primary " onclick="detalleLibro(${clothes._id})">VER</button>
+                  <button type="button" class="btn btn-outline-primary " onclick="DetalleProducto(${clothes._id})">VER</button>
+                </div>
+                <div class="d-grid gap-2" style="margin-top:10px">
+                  <button type="button" class="btn btn-outline-primary " onclick="detalleLibro(${clothes._id})"><i class="bi bi-cart"></i>Agregar al carrito</button>
                 </div>
               </div>
             </div>

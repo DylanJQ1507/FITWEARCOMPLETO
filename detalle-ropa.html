@@ -69,10 +69,10 @@
                             <div id="carouselExample" class="carousel slide">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
-                                        <img src="img/gorragymsharkw.png" class="img-fluid" alt="...">
+                                        <img src="img/gorragymsharkw.png" class="img-fluid" id="image1" alt="...">
                                     </div>
                                     <div class="carousel-item">
-                                        <img src="img/Gorragymshark2B.jpeg" class="img-fluid" alt="...">
+                                        <img src="img/Gorragymshark2B.jpeg" class="img-fluid" id="image2" alt="...">
                                     </div>
                                 </div>
                                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
@@ -90,11 +90,14 @@
                         <div class="col-md-8">
                             <div class="card-body">
                                 <div class="d-flex justify-content-between">
-                                    <h5 class="card-title fs-1">GORRA GYMSHARK</h5>
-                                    <p>⭐⭐⭐⭐⭐</p>
+                                    <h5 class="card-title fs-1" id="titulo">GORRA GYMSHARK</h5>
+                                    
+                                    <p id="valoracion">⭐⭐⭐⭐⭐</p>
                                 </div>
-                                <p class="fs-2 " style="margin-bottom:0px;">&cent;12 000</p>
-                                <p class="card-text fs-4 " style="margin-bottom:0px;">Disponibilidad: Disponible</p>
+                                <p class="fs-2 " id=precio style="margin-bottom:0px;">&cent;12 000</p>
+                                <li class="list-group-item" id="categories">      
+                                </li>
+                                <p class="card-text fs-4 " id="Disponibilidad" style="margin-bottom:0px;">Disponibilidad: Disponible</p>
                                 <div class="accordion" id="accordionExample">
                                     <div class="accordion-item">
                                         <h2 class="accordion-header">
@@ -106,29 +109,26 @@
                                         </h2>
                                         <div id="collapseOne" class="accordion-collapse collapse show"
                                             data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
+                                            <div class="accordion-body" id="descripcion">
 
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <p class="card-text fs-5"><small class="text-body">Tamaño</small></p>
-                                <select class="form-select form-select-m mb-1" aria-label="Large select example">
-                                    <option>S</option>
-                                    <option>M</option>
-                                    <option>L</option>
+                                <select class="form-select form-select-m mb-1" id="tallas" aria-label="Large select example">
+                                   
                                 </select>
-                                <p class="card-text fs-4 ">Tiempo de entrega:3 dias</p>
+                                <p class="card-text fs-4 " id="tiempo">Tiempo de entrega:3 dias</p>
                                 <div class="row">
                                     <div class="col">
-                                        <p class="card-text fs-5 ">COSTO DE ENVIO <br>3000</p>
+                                        <p class="card-text fs-5 " id="envio">COSTO DE ENVIO <br>3000</p>
                                     </div>
                                     <div class="col">
                                         <label>METODO DE ENVIO</label>
                                         <select class="form-select form-select-m mb-1"
-                                            aria-label="Large select example">
-                                            <option>S</option>
-                                            <option>M</option>
+                                          id="envios"  aria-label="Large select example">
+                                            
                                         </select>
                                     </div>
                                 </div>
@@ -143,13 +143,16 @@
                                         </h2>
                                         <div id="collapseTwo" class="accordion-collapse collapse show"
                                             data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                                <p>Garantia:1 mes</p>
+                                            <div class="accordion-body" id="adicionales">
+                                                <p id="garantia"></p>
                                                 <P><a href="Contacto.html">Informacion de contacto o ayuda</a></p>
                                                 <p><a href="TyC.html">TERMINOS Y CONDICIONES DEVOLUCION</a></p>
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+                                <div class="col"  id="comprar">
+                                   
                                 </div>
                             </div>
                         </div>
@@ -294,6 +297,7 @@
     <script src="js/listclothes.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="./js/graficoInicio.js"></script>
+    <script src="./js/cargar-detalle.js"></script>
 </body>
 
 </html>
