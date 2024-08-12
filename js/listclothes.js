@@ -35,7 +35,7 @@ function displayclothespromotion(data) {
     if (clothes.categories[0] == "PROMOCION") {
       const cardclothes = `<div class="col">
             <div class="card">
-              <img class="card-img-top" style="max-height:260px;" role="img" src="${clothes.imgprincipalUrl ? clothes.imgprincipalUrl : 'img/image-not-found.jpg'}"
+              <img class="card-img-top" style="max-height:260px;" role="img" src="${clothes.imgprincipalUrl ? clothes.imgprincipalUrl : 'img/image-not-found.jpeg'}"
                 alt="Imagen" />
               <div class="card-body">
                 <p class="fs-3 card-title">${clothes.name}</p>
@@ -44,7 +44,7 @@ function displayclothespromotion(data) {
                 <hr>
                 <p class="fs-5" style="text-decoration:line-through">Precio Regular: &cent${clothes.price}</p>
                 <hr>
-                <h1 class="card-title text-end" style="font-weight:bold">2x&cent;${clothes.pricepromo}</h1>
+                <h1 class="card-title text-end" style="font-weight:bold">&cent;${clothes.pricepromo}</h1>
                 <div class="d-grid gap-2">
                   <button type="button" class="btn btn1 btn-outline-primary" onclick="detalleLibro(${clothes._id})">VER</button>
                 </div>
@@ -63,7 +63,7 @@ function displayclothes(data) {
     colclothes.classList.add("col")
     let pricePromoHtml = ''
     if (clothes.pricepromo) {
-      pricePromoHtml = `<h1 class="card-title text-end"style="font-weight:bold">2x&cent;${clothes.pricepromo}</h1><hr>`
+      pricePromoHtml = `<h1 class="card-title text-end"style="font-weight:bold">&cent;${clothes.pricepromo}</h1><hr>`
     }
     const cardclothes = `<div class="col">
             <div class="card">
@@ -89,12 +89,12 @@ function displayclothes(data) {
 
   });
 }
-function displaycategories(){
+function displaycategories() {
   var select = $('#filter');
   var categories = [];
-  $.each(clothes,function(index,clothe){
-    $.each(clothe.categories, function(index,category){
-      if($.inArray(category,categories)=== -1){
+  $.each(clothes, function (index, clothe) {
+    $.each(clothe.categories, function (index, category) {
+      if ($.inArray(category, categories) === -1) {
         categories.push(category)
         //Añadir opción al select
         select.append(`<option value="${category}"> ${category} </option>`)
@@ -102,22 +102,22 @@ function displaycategories(){
     })
   })
 }
-  
+
 
 $(document).ready(function () {
 
 
   displayclothesmoresold(clothes)
   displayclothespromotion(clothes)
- displayclothes(clothes)
- displaycategories()
+  displayclothes(clothes)
+  displaycategories()
   $('#filter').change(function () {
-    var category=$(this).val()
+    var category = $(this).val()
     var filterclothes
-    if(category==='all'){
-      filterclothes=clothes
-    }else{
-      filterclothes=clothes.filter((function(clothe){
+    if (category === 'all') {
+      filterclothes = clothes
+    } else {
+      filterclothes = clothes.filter((function (clothe) {
         return clothe.categories.includes(category)
       }))
     }
