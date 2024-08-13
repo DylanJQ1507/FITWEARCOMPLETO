@@ -28,14 +28,10 @@ $(document).ready(function () {
             }
             //Autores
             $("#tiempo").text("Tiempo de entrega: " + clothe.tiempoEntrega)
-            $('#envio').html("Costo de envio " + '<br>' +"&cent;"+ clothe.gastoenvio)
-            $.each(clothe.envio, function (index, tipo) {
-                selectenvio.append(`<option value="${tipo}"> ${tipo} </option>`)
-            })
-            $("#garantia").text("Garantia: " + clothe.garantia)
-            var button=' <button type="submit" style="margin-top:10px;" class="btn text-end btn-lg btn-outline-primary " onclick="comprarLibro(this)" data-id="${book._id}" ><i class="bi bi-cart">Comprar</button>'
+            $('#envio').html("Costo de envio " + '<br>' + "&cent;" + clothe.gastoenvio)
 
-            
+            $("#garantia").text("Garantia: " + clothe.garantia)
+            var button = ' <button type="submit" id=compraa style="margin-top:10px;" class="btn text-end btn-lg btn-outline-primary "  data-id="${book._id}" ><i class="bi bi-cart">Comprar</button>'
             $("#comprar").append(button)
             //Categorías
             clothe.categories.forEach(categoria => {
@@ -44,8 +40,17 @@ $(document).ready(function () {
                 categoriaItem.classList.add("badge", "text-bg-secondary")
                 //categoriaItem.classList.add("text-bg-secondary")
                 categoriaItem.textContent = categoria
-                categoriaItem.style.marginRight='10px'
+                categoriaItem.style.marginRight = '10px'
                 $("#categories").append(categoriaItem)
+            });
+            clothe.envio.forEach(enviop => {
+                //Crear un badge para cada categoría
+                const envioitem = document.createElement("span")
+                envioitem.classList.add("badge", "text-bg-secondary")
+                //categoriaItem.classList.add("text-bg-secondary")
+                envioitem.textContent = enviop
+                envioitem.style.marginRight = '10px'
+                $("#tipoenvio").append(envioitem)
             });
         }
 

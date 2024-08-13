@@ -22,9 +22,6 @@ function displayclothesmoresold(data) {
                 <div class="d-grid gap-2">
                   <button type="button" class="btn btn-outline-primary " onclick="DetalleProducto(${clothes._id})">VER</button>
                 </div>
-                <div class="d-grid gap-2" style="margin-top:10px">
-                  <button type="submit" class="btn btn-outline-primary " onclick="detalleLibro(${clothes._id})"><i class="bi bi-cart"></i>Agregar al carrito</button>
-                </div>
               </div>
             </div>
           </div>`
@@ -51,9 +48,7 @@ function displayclothespromotion(data) {
                 <div class="d-grid gap-2">
                   <button type="button" class="btn btn1 btn-outline-primary" onclick="DetalleProducto(${clothes._id})">VER</button>
                 </div>
-                <div class="d-grid gap-2" style="margin-top:10px">
-                  <button type="submit" class="btn btn-outline-primary " onclick="detalleLibro(${clothes._id})"><i class="bi bi-cart"></i>Agregar al carrito</button>
-                </div>
+                
               </div>
             </div>
           </div>`
@@ -88,9 +83,7 @@ function displayclothes(data) {
                 <div class="d-grid gap-2">
                   <button type="button" class="btn btn-outline-primary " onclick="DetalleProducto(${clothes._id})">VER</button>
                 </div>
-                <div class="d-grid gap-2" style="margin-top:10px">
-                  <button type="submit" class="btn btn-outline-primary " onclick="detalleLibro(${clothes._id})"><i class="bi bi-cart"></i>Agregar al carrito</button>
-                </div>
+                
               </div>
             </div>
           </div>`

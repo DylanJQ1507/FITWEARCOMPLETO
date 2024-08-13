@@ -122,7 +122,7 @@
                                     </select>
                                     <div class="form-floating">
                                         <input type="number" class="form-control" id="Cantidad"
-                                            value="">
+                                            value="1" min="1" step="1">
                                         <label for="floatingInputGrid">Cantidad</label>
                                     </div>
                                 </div>
@@ -132,11 +132,8 @@
                                         <p class="card-text fs-5 " id="envio">COSTO DE ENVIO <br>3000</p>
                                     </div>
                                     <div class="col">
-                                        <label>METODO DE ENVIO</label>
-                                        <select class="form-select form-select-m mb-1" id="envios"
-                                            aria-label="Large select example">
-
-                                        </select>
+                                        <li class="list-group-item" id="tipoenvio">
+                                        </li>
                                     </div>
                                 </div>
                                 <div class="accordion" style="margin-top: 10px;" id="accordionExample">
@@ -305,6 +302,7 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="./js/graficoInicio.js"></script>
     <script src="./js/cargar-detalle.js"></script>
+    <script src="./js/guardarStorage.js"></script>
 </body>
 
 </html>

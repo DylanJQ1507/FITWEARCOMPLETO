@@ -31,9 +31,9 @@ async function crearGrafico() {
                 datasets: [{
                     label: 'Productos ',
                     data: sales,
-                    options : {
-                        responsive : true,
-                        maintainAspectRatio : true,
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: true,
                     },
                     backgroundColor: [
                         'rgba(255, 99, 132, 0.2)',
@@ -52,9 +52,9 @@ async function crearGrafico() {
                         'rgb(201, 203, 207)'
                     ],
                     borderWidth: 1
-                    
+
                 }]
-               
+
             }
         })
 
