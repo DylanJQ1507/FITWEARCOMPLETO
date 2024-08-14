@@ -82,7 +82,7 @@ const clothes = [
         "envio": ["Envio Postal", "Recogida en tienda"],
         "garantia": "1 MES",
         "subdescription": "Color Blanco",
-        "talla": " Unica",
+        "talla": [ "Unica"],
         "categories": ["PROMOCION", "ACCESORIOS", "GYMSHARK", "GORRAS"]
     },
     {

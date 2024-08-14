@@ -13,11 +13,14 @@ $(document).ready(function () {
     const comprarProducto = document.getElementById("compraa");
     comprarProducto.addEventListener("click", (e) => {
         e.preventDefault();
-
+        var pricepromo
         const idproducto = clothe._id
         const name = clothe.name
         const img = clothe.imgprincipalUrl
         const price = clothe.price
+        if (clothe.pricepromo) {
+            pricepromo = clothe.pricepromo
+        }
         const cantidad = document.getElementById("Cantidad").value
         const tamaño = document.getElementById("tallas").value
         const cantf = parseInt(cantidad, 10)
@@ -29,6 +32,7 @@ $(document).ready(function () {
             price,
             cantf,
             tamaño,
+            pricepromo,
         };
 
         //Guardar
@@ -42,6 +46,7 @@ $(document).ready(function () {
     const saveContactLocalStorage = (producto) => {
         let productos = JSON.parse(localStorage.getItem("productos")) || [];
         productos.push(producto);
+        
         localStorage.setItem("productos", JSON.stringify(productos));
     };
 
