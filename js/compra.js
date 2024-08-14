@@ -51,9 +51,9 @@ $(document).ready(function () {
 
 });
 function updateCalculos(cantidadInput) {
-    
+
     const fila = cantidadInput.closest('.row');
-   
+
     const cantidad = parseInt(cantidadInput.value);
     const subtotalInput = fila.querySelector('.subtotal');
     const totalInput = fila.querySelector('.total');
@@ -66,10 +66,10 @@ function updateCalculos(cantidadInput) {
     // Actualizar el campo total
     totalInput.value = total;
     actualizarcompra()
-    if(cantidad==0){
+    if (cantidad == 0) {
         eliminar0(parseInt(fila.dataset.id))
-    fila.remove()
-   
+        fila.remove()
+
     }
 }
 
@@ -94,11 +94,11 @@ function deleteRow(button) {
     row.remove()
     actualizarcompra()
 }
-function eliminar0(id){
+function eliminar0(id) {
     const productos = JSON.parse(localStorage.getItem('productos'))
     const productosnuevo = productos.filter(item => item.idproducto !== id)
     localStorage.setItem('productos', JSON.stringify(productosnuevo))
-    
+
     actualizarcompra()
 }
 
