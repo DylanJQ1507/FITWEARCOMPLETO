@@ -35,8 +35,8 @@ function cargarcarritocompra(data) {
                             <p class="fs-5" style="margin-bottom: 0;">Total &cent;</p>
                             <input type="text" class="form-control total" name=total[] value="${total}">
                         </div>
-                        <div class="col-md-2">
-                            <button class="btn btn-outline-primary" onclick="deleteRow(this)">
+                        <div class="col-md-2  border-bottom">
+                            <button class="btn btn-outline-primary " onclick="deleteRow(this)">
                                 <i class="bi bi-trash3"> </i>
                         </div>
                     </div>`
