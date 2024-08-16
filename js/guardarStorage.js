@@ -13,18 +13,19 @@ $(document).ready(function () {
     const comprarProducto = document.getElementById("compraa");
     comprarProducto.addEventListener("click", (e) => {
         e.preventDefault();
-        var pricepromo
-        const idproducto = clothe._id
-        const name = clothe.name
-        const img = clothe.imgprincipalUrl
-        const price = clothe.price
+        var pricepromo;
+        const idproducto = clothe._id;
+        const name = clothe.name;
+        const img = clothe.imgprincipalUrl;
+        const price = clothe.price;
         if (clothe.pricepromo) {
-            pricepromo = clothe.pricepromo
+            pricepromo = clothe.pricepromo;
         }
-        const cantidad = document.getElementById("Cantidad").value
-        const tamaño = document.getElementById("tallas").value
-        const cantf = parseInt(cantidad, 10)
-        //Contacto
+        const cantidad = document.getElementById("Cantidad").value;
+        const tamaño = document.getElementById("tallas").value;
+        const cantf = parseInt(cantidad, 10);
+        
+        // Crear objeto producto
         const producto = {
             idproducto,
             name,
@@ -35,17 +36,25 @@ $(document).ready(function () {
             pricepromo,
         };
 
-        //Guardar
+        // Guardar o actualizar producto en localStorage
         saveContactLocalStorage(producto);
-        // saveContactSessionStorage(contact);
-        //Mostrar
-        //displayContactsLocalStorage();
-        //displayContactsSessionStorage();
-        alert("AGREGADO AL CARRITO")
+        $.notify("Producto Agregado con Exito: " + name, "success");
     });
+
     const saveContactLocalStorage = (producto) => {
         let productos = JSON.parse(localStorage.getItem("productos")) || [];
-        productos.push(producto);
+        // Buscar si el producto ya existe
+        const index = productos.findIndex(p => p.idproducto === producto.idproducto);
+        
+        if (index > -1) {
+           
+            productos[index].cantf += producto.cantf;
+           
+            productos[index].total = (productos[index].pricepromo || productos[index].price) * productos[index].cantf;
+        } else {
+            
+            productos.push(producto);
+        }
         
         localStorage.setItem("productos", JSON.stringify(productos));
     };
