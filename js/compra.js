@@ -194,3 +194,13 @@ function actualizarMetodoEntrega(input) {
 }
 
 
+document.getElementById('realizarPedido').addEventListener('click', function() {
+   
+    document.getElementById('pagoSeccion').style.display = 'block';
+
+
+    document.getElementById('pagoSeccion').scrollIntoView({ behavior: 'smooth' });
+});
+
+
+

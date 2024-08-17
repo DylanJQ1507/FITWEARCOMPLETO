@@ -31,7 +31,7 @@ $(document).ready(function () {
             $('#envio').html("Costo de envio " + '<br>' + "&cent;" + clothe.gastoenvio)
 
             $("#garantia").text("Garantia: " + clothe.garantia)
-            var button = ' <button type="submit" id=compraa style="margin-top:10px;" class="btn text-end btn-lg btn-outline-primary "  data-id="${book._id}" ><i class="bi bi-cart">Comprar</button>'
+            var button = ' <button type="submit" id=compraa style="margin-top:10px;" class="btn text-end btn-lg btn-outline-primary "  data-id="${clothes._id}" ><i class="bi bi-cart">Comprar</button>'
             $("#comprar").append(button)
             //Categorías
             clothe.categories.forEach(categoria => {
