@@ -12,7 +12,7 @@ document.getElementById('botonPagar').addEventListener('click', function () {
             .then(data => {
                 let logo = '';
                 if (data.Scheme.toLowerCase() === 'visa') {
-                    logo = '<img src="./img/logovisa.png" alt="Visa" />';
+                    logo = '<img src="./img/visaredonda.png" alt="Visa" />';
                 } else if (data.Scheme.toLowerCase() === 'mastercard') {
                     logo = '<img src="./img/logomastercard.png" alt="MasterCard" />';
                 }
