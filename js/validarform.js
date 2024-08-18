@@ -2,10 +2,10 @@
 (() => {
   'use strict'
 
-  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+ 
   const forms = document.querySelectorAll('.needs-validation')
 
-  // Loop over them and prevent submission
+  
   Array.from(forms).forEach(form => {
     form.addEventListener('submit', event => {
       //regex para verificar los campos
@@ -62,7 +62,13 @@
         event.preventDefault()
         event.stopPropagation()
       } else {
-        alert("listo")
+        Swal.fire({
+          position: "top-center",
+          icon: "success",
+          title: "Gracias por contactarnos",
+          showConfirmButton: false,
+          timer: 1500
+      });
         form.action = 'https://formsubmit.co/d6a7aaa38713601e79006e37b7bda120'
         form.method = 'POST';
        
