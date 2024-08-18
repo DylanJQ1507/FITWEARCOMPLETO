@@ -128,14 +128,18 @@ const actualizarcompra = (isInitialLoad = false) => {
 
     const totalcompra = document.querySelector(".totalcompra");
     const totalsubtotal = document.querySelector(".subtotalcompra");
-
+ const totadetalle=document.querySelector(".totaldetalle")
     if (isInitialLoad || totales.length === 0) {
         totalcompra.textContent = "¢0";
         totalsubtotal.textContent = "¢0";
+          
     } else {
         totalcompra.textContent = "¢" + totalConEnvio;
         totalsubtotal.textContent = "¢" + sumatotal;
+        totadetalle.textContent="TOTAL: "+"¢"+totalConEnvio 
     }
+
+
 };
 
 let currentDeleteButton; 

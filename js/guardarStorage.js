@@ -37,11 +37,11 @@ $(document).ready(function () {
         };
 
         // Guardar o actualizar producto en localStorage
-        saveContactLocalStorage(producto);
+        saveclotheLocalStorage(producto);
         $.notify("Producto Agregado con Exito: " + name, "success");
     });
 
-    const saveContactLocalStorage = (producto) => {
+    const saveclotheLocalStorage = (producto) => {
         let productos = JSON.parse(localStorage.getItem("productos")) || [];
         // Buscar si el producto ya existe
         const index = productos.findIndex(p => p.idproducto === producto.idproducto);
