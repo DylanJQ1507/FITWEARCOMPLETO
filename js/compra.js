@@ -108,7 +108,7 @@ function updateLocalStorage(idproducto, newCantidad, newTotal) {
     }
 }
 
-// Función para actualizar el total de la compra
+
 const actualizarcompra = (isInitialLoad = false) => {
     const totales = document.querySelectorAll(".total");
     let sumatotal = 0;
@@ -181,7 +181,6 @@ function eliminar0(id) {
     actualizarcompra();
 }
 
-
 function actualizarMetodoEntrega(input) {
     const envioContainer = document.getElementById("envioContainer");
     const envioCosto = document.getElementById("envioCosto");
@@ -190,12 +189,17 @@ function actualizarMetodoEntrega(input) {
     if (input.value === "envio") {
         envioCosto.textContent = "¢" + costoEnvio;
         envioContainer.style.display = "flex";
+      
+        localStorage.setItem("costoEnvio", costoEnvio);
     } else if (input.value === "retiro") {
         envioContainer.style.display = "none";
         envioCosto.textContent = "¢0";
+     
+        localStorage.removeItem("costoEnvio");
     }
     actualizarcompra();
 }
+
 
 
 document.getElementById('realizarPedido').addEventListener('click', function() {

@@ -347,4 +347,62 @@ footer {
     color: #000000;
 }
 
- 
+
+
+
+
+.factura-container {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.factura-items {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.factura-item {
+    background-color: #e6f2ff; /* Fondo ligero para los ítems */
+    padding: 0.75rem;
+    border-radius: 0.25rem;
+    margin-bottom: 0.5rem;
+}
+
+
+
+.factura-item-nombre,
+.factura-item-cantidad,
+.factura-item-precio,
+.factura-item-total {
+    flex: 1;
+    color: #555;
+}
+
+.factura-total {
+    background-color: #6bbce2;
+    color: #ffffff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.btn-primary {
+    background-color: #6bbce2;
+    border-color: #6bbce2;
+}
+
+.btn-primary:hover {
+    background-color: #4a8ac3;
+    border-color: #4a8ac3;
+}
+
+@media (max-width: 576px) {
+    .factura-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

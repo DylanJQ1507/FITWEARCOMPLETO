@@ -46,3 +46,67 @@ document.getElementById('botonPagar').addEventListener('click', function () {
         });
     }
 });
+
+
+
+function actualizarCarrito2() {
+    $("#detallecarrito").html(''); 
+    $("#subtotalcompra").text('₡0'); 
+    $("#envioCosto").text('₡0');
+    $("#totalcompra").text('₡0'); 
+}
+
+
+
+function mostrarFactura() {
+    const facturaDetalle = $(".factura-items");
+    facturaDetalle.html(''); 
+
+    let totalGeneral = 0;
+    let costoEnvio = parseFloat(localStorage.getItem("costoEnvio")) || 0; 
+
+    $("#detallecarrito .row").each(function () {
+        const nombreProducto = $(this).find("#nombreproducto").text();
+        const cantidad = $(this).find(".Cantidad").val();
+        const precioUnitario = $(this).find(".subtotal").val();
+        const total = $(this).find(".total").val();
+
+        totalGeneral += parseFloat(total);
+
+        const facturaItem = `<div class="factura-item d-flex justify-content-between mb-2">
+            <span class="factura-item-nombre"><strong>Producto:</strong> ${nombreProducto}</span>
+            <span class="factura-item-cantidad"><strong>Cantidad:</strong> ${cantidad}</span>
+            <span class="factura-item-precio"><strong>Precio Unitario:</strong> ¢${parseFloat(precioUnitario).toFixed(2)}</span>
+            <span class="factura-item-total"><strong>Total:</strong> ¢${parseFloat(total).toFixed(2)}</span>
+        </div>`;
+
+        facturaDetalle.append(facturaItem);
+    });
+
+    if (costoEnvio > 0) {
+        const envioItem = `<div class="factura-item d-flex justify-content-between mb-2">
+            <span class="factura-item-nombre"><strong>Costo de Envío:</strong></span>
+            <span class="factura-item-cantidad"></span>
+            <span class="factura-item-precio"></span>
+            <span class="factura-item-total">¢${costoEnvio.toFixed(2)}</span>
+        </div>`;
+        facturaDetalle.append(envioItem);
+    }
+
+    totalGeneral += costoEnvio; 
+
+    $("#totalFactura").html(`<strong>¢${totalGeneral.toFixed(2)}</strong>`);
+    $("#facturaSeccion").show(); 
+}
+
+
+
+
+
+$("#botonPagar").on("click", function () {
+    mostrarFactura(); 
+    localStorage.removeItem("productos"); 
+    localStorage.removeItem("costoEnvio");  
+    actualizarCarrito2();
+    
+});
