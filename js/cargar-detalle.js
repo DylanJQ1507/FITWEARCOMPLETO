@@ -52,6 +52,20 @@ $(document).ready(function () {
                 envioitem.style.marginRight = '10px'
                 $("#tipoenvio").append(envioitem)
             });
+            $("#texto1").html(clothe.text[0])
+            $("#texto2").html(clothe.text[1])
+            $("#texto3").html(clothe.text[2])
+
+            $("#nombre1").html(clothe.name[0])
+            $("#nombre2").html(clothe.name[1])
+            $("#nombre3").html(clothe.name[2])
+
+            
+            $("#ocupacion1").html(clothe.ocupation[0])
+            $("#ocupacion2").html(clothe.ocupation[1])
+            $("#ocupacion3").html(clothe.ocupation[2])
+
+
         }
 
     }

@@ -14,7 +14,11 @@ const clothes = [
         "garantia": "1 MES",
         "subdescription": "6 COLORES",
         "talla": ["S", "M", "L"],
-        "categories": ["MAS VENDIDOS", "LICRAS", "GYMSHARK", "MUJER"]
+        "categories": ["MAS VENDIDOS", "LICRAS", "GYMSHARK", "MUJER"],
+        "text": ["Lo mejor que he podido comprar me hizo muy feliz", "La calidad de la tela es la mejor que he podido probar", "Super recomendados excelente servicio"],
+        "name": ["Sebastian Barco", "Vanessa Gonzales", "Maria Jimenez"],
+        "ocupation": ["Estudiante", "Maestra", "Jugadora Volleyball"],
+
     },
     {
         "_id": 2,
@@ -31,7 +35,10 @@ const clothes = [
         "garantia": "1 MES",
         "subdescription": "5 COLORES",
         "talla": ["S", "M", "L"],
-        "categories": ["MAS VENDIDOS", "DUOS DEPORTIVOS", "NIKE", "MUJER"]
+        "categories": ["MAS VENDIDOS", "DUOS DEPORTIVOS", "NIKE", "MUJER"],
+        "text": ["Una experiencia de compra muy satisfactoria", "El producto es de alta calidad", "Muy contenta con el servicio recibido"],
+        "name": ["Jorge Hernández", "Silvia Pérez", "Luis Martínez"],
+        "ocupation": ["Economista", "Enfermera", "Biólogo"]
     },
     {
         "_id": 3,
@@ -48,7 +55,10 @@ const clothes = [
         "garantia": "1 MES",
         "subdescription": "8 PIEZAS",
         "talla": ["S", "M", "L"],
-        "categories": ["MAS VENDIDOS", "SETS", "NIKE", "MUJER"]
+        "categories": ["MAS VENDIDOS", "SETS", "NIKE", "MUJER"],
+        "text": ["La calidad es insuperable y el servicio excelente", "Llegó en el tiempo prometido y en perfectas condiciones", "Estoy muy feliz con mi compra"],
+        "name": ["Catalina Vargas", "Héctor Mendoza", "Ana Morales"],
+        "ocupation": ["Médico", "Diseñador", "Profesor"]
     },
     {
         "_id": 4,
@@ -65,7 +75,10 @@ const clothes = [
         "garantia": "1 MES",
         "subdescription": "5 PIEZAS",
         "talla": ["S", "M", "L"],
-        "categories": ["MAS VENDIDOS", "SETS", "GYMSHARK", "MUJER"]
+        "categories": ["MAS VENDIDOS", "SETS", "GYMSHARK", "MUJER"],
+        "text": ["Todo salió perfecto, el producto es excelente", "La atención al cliente fue muy eficaz", "Repetiré sin duda"],
+        "name": ["Santiago Torres", "Carolina Martínez", "Mateo García"],
+        "ocupation": ["Programador", "Nutricionista", "Periodista"]
     },
     {
         "_id": 5,
@@ -83,7 +96,10 @@ const clothes = [
         "garantia": "1 MES",
         "subdescription": "Color Blanco",
         "talla": ["Unica"],
-        "categories": ["PROMOCION", "ACCESORIOS", "GYMSHARK", "GORRAS"]
+        "categories": ["PROMOCION", "ACCESORIOS", "GYMSHARK", "GORRAS"],
+        "text": ["La compra fue simple y el producto llegó a tiempo", "La calidad es increíble, vale la pena cada peso", "Recomiendo totalmente este producto"],
+        "name": ["Natalia Gómez", "Andrés Martínez", "Daniela López"],
+        "ocupation": ["Chef", "Administrador", "Vendedora"]
     },
     {
         "_id": 6,
@@ -101,7 +117,10 @@ const clothes = [
         "garantia": "1 MES",
         "subdescription": "LICRA LARGA S M L",
         "talla": ["S", "M", "L"],
-        "categories": ["PROMOCION", "DUOS DEPORTIVOS", "NIKE", "MUJER"]
+        "categories": ["PROMOCION", "DUOS DEPORTIVOS", "NIKE", "MUJER"],
+        "text": ["El producto es justo lo que buscaba", "Muy satisfecho con la rapidez de la entrega", "El servicio al cliente es de lo mejor"],
+        "name": ["Carla Martínez", "Felipe Castro", "Ricardo Jiménez"],
+        "ocupation": ["Ingeniero de Software", "Gerente", "Farmacéutico"]
     },
     {
         "_id": 7,
@@ -119,7 +138,10 @@ const clothes = [
         "garantia": "1 MES",
         "subdescription": "S M L",
         "talla": ["S", "M", "L"],
-        "categories": ["PROMOCION", "DUOS DEPORTIVOS", "MUJER"]
+        "categories": ["PROMOCION", "DUOS DEPORTIVOS", "MUJER"],
+        "text": ["Una excelente experiencia de compra", "La calidad del producto es de primera", "Sin duda repetiré mi compra"],
+        "name": ["Esteban Gómez", "Sandra Ruiz", "Julian Cárdenas"],
+        "ocupation": ["Profesor", "Abogada", "Economista"]
     },
     {
         "_id": 8,
@@ -137,7 +159,10 @@ const clothes = [
         "garantia": "1 MES",
         "subdescription": "COLOR BLANCO",
         "talla": ["S", "M", "L"],
-        "categories": ["PANTALONETAS", "HOMBRE"]
+        "categories": ["PANTALONETAS", "HOMBRE"],
+        "text": ["El producto llegó a tiempo y en perfecto estado", "Muy contento con la compra, superó mis expectativas", "El proceso de compra fue muy fluido"],
+        "name": ["Paola Herrera", "Emilio Fernández", "Valeria Ríos"],
+        "ocupation": ["Fisioterapeuta", "Arqueólogo", "Técnico"]
     },
     {
         "_id": 9,
@@ -155,7 +180,10 @@ const clothes = [
         "garantia": "1 MES",
         "subdescription": "AZUL",
         "talla": ["S", "M", "L"],
-        "categories": ["PANTALONETAS", "HOMBRE"]
+        "categories": ["PANTALONETAS", "HOMBRE"],
+        "text": ["Estoy encantada con el producto y el servicio", "La atención postventa es excelente", "Todo el proceso fue muy profesional"],
+        "name": ["Mónica Fernández", "Felipe Martínez", "Gabriela Castro"],
+        "ocupation": ["Diseñadora Gráfica", "Juez", "Educadora"]
     },
     {
         "_id": 10,
@@ -173,7 +201,10 @@ const clothes = [
         "garantia": "1 MES",
         "subdescription": "AZUL",
         "talla": ["S", "M", "L"],
-        "categories": ["PANTALONETAS", "HOMBRE"]
+        "categories": ["PANTALONETAS", "HOMBRE"],
+        "text": ["La compra fue rápida y sin complicaciones", "El producto llegó tal como lo esperábamos", "Excelente relación calidad-precio"],
+        "name": ["Fernando Martínez", "Isabella Morales", "Luis López"],
+        "ocupation": ["Médico", "Ingeniera", "Cocinero"]
     },
     {
         "_id": 11,
@@ -191,7 +222,10 @@ const clothes = [
         "garantia": "1 MES",
         "subdescription": "NEGRO",
         "talla": ["S", "M", "L"],
-        "categories": ["PANTALONETAS", "HOMBRE"]
+        "categories": ["PANTALONETAS", "HOMBRE"],
+        "text": ["El mejor servicio que he recibido en mucho tiempo", "La calidad del producto es excepcional", "Recomiendo este producto a todos mis amigos"],
+        "name": ["María Gómez", "Ricardo Molina", "Laura Sánchez"],
+        "ocupation": ["Marketing", "Abogada", "Fotógrafa"]
     },
     {
         "_id": 12,
@@ -209,7 +243,10 @@ const clothes = [
         "garantia": "1 MES",
         "subdescription": "BLANCO",
         "talla": ["S", "M", "L"],
-        "categories": ["SETS", "MUJER", "NIKE"]
+        "categories": ["SETS", "MUJER", "NIKE"],
+        "text": ["El producto es exactamente como lo describen", "Todo el proceso de compra fue sencillo", "Estoy muy contento con mi compra"],
+        "name": ["Diego Ramírez", "Claudia López", "Andrés Salazar"],
+        "ocupation": ["Empresario", "Veterinario", "Estilista"]
     },
     {
         "_id": 13,
@@ -227,7 +264,10 @@ const clothes = [
         "garantia": "1 MES",
         "subdescription": "NARANJA",
         "talla": ["S", "M", "L"],
-        "categories": ["FALDAS", "MUJER", "NIKE"]
+        "categories": ["FALDAS", "MUJER", "NIKE"],
+        "text": ["Me encanta la calidad, se nota que es premium", "Servicio al cliente muy profesional", "Una experiencia de compra muy positiva"],
+        "name": ["Natalia Sánchez", "Sergio Castro", "Elena Vargas"],
+        "ocupation": ["Periodista", "Músico", "Psicólogo"]
     },
     {
         "_id": 14,
@@ -245,7 +285,10 @@ const clothes = [
         "garantia": "1 MES",
         "subdescription": "VERDE",
         "talla": ["S", "M", "L"],
-        "categories": ["FALDAS", "MUJER", "NIKE"]
+        "categories": ["FALDAS", "MUJER", "NIKE"],
+        "text": ["El producto superó mis expectativas", "La entrega fue rápida y eficiente", "Recomiendo este sitio sin duda"],
+        "name": ["Javier Ortega", "Camila Morales", "José Hernández"],
+        "ocupation": ["Contador", "Diseñadora", "Chef"]
     },
     {
         "_id": 15,
@@ -263,7 +306,10 @@ const clothes = [
         "garantia": "1 MES",
         "subdescription": "MORADO",
         "talla": ["S", "M", "L"],
-        "categories": ["FALDAS", "MUJER", "NIKE"]
+        "categories": ["FALDAS", "MUJER", "NIKE"],
+        "text": ["El diseño es increíble y se ajusta perfectamente", "La experiencia de compra fue muy agradable", "Definitivamente volveré a comprar aquí"],
+        "name": ["Lucía Fernández", "Mateo López", "Ana Ruiz"],
+        "ocupation": ["Arquitecta", "Programador", "Enfermera"]
     },
     {
         "_id": 16,
@@ -281,7 +327,10 @@ const clothes = [
         "garantia": "1 MES",
         "subdescription": "NEGRO",
         "talla": ["S", "M", "L"],
-        "categories": ["FALDAS", "MUJER", "NIKE"]
+        "categories": ["FALDAS", "MUJER", "NIKE"],
+        "text": ["Estoy muy satisfecho con la compra, vale cada centavo", "La atención al cliente fue excepcional", "El producto llegó en perfectas condiciones y a tiempo"],
+        "name": ["Alejandro Pérez", "Sofía Martínez", "Carlos Gómez"],
+        "ocupation": ["Ingeniero", "Doctora", "Abogado"]
     }
 
 ]
