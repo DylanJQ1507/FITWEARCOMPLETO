@@ -56,9 +56,9 @@ $(document).ready(function () {
             $("#texto2").html(clothe.text[1])
             $("#texto3").html(clothe.text[2])
 
-            $("#nombre1").html(clothe.name[0])
-            $("#nombre2").html(clothe.name[1])
-            $("#nombre3").html(clothe.name[2])
+            $("#nombre1").html(clothe.names[0])
+            $("#nombre2").html(clothe.names[1])
+            $("#nombre3").html(clothe.names[2])
 
             
             $("#ocupacion1").html(clothe.ocupation[0])
