@@ -29,11 +29,11 @@ function cargarcarritocompra(data) {
             </div>
             <div class="col-md-2">
                 <p class="fs-5" style="margin-bottom: 0;">Subtotal ¢</p>
-                <input type="text" class="form-control subtotal" value="${price}">
+                <input type="text" class="form-control  subtotal" value="${price}" readonly>
             </div>
             <div class="col-md-2">
                 <p class="fs-5" style="margin-bottom: 0;">Total ¢</p>
-                <input type="text" class="form-control total" name="total[]" value="${total}">
+                <input type="text" class="form-control  total" name="total[]" value="${total}" readonly>
             </div>
             <div class="col-md-2 border-bottom">
                 <button class="btn btn-outline-primary" onclick="deleteRow(this)">

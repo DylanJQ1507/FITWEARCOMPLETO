@@ -26,6 +26,7 @@ $(document).ready(function () {
             if (clothe.imgsecundary) {
                 $("#image2").attr("src", clothe.imgsecundary)
             }
+            $("#image3").attr("src", clothe.imgter)
             //Autores
             $("#tiempo").text("Tiempo de entrega: " + clothe.tiempoEntrega)
             $('#envio').html("Costo de envio " + '<br>' + "&cent;" + clothe.gastoenvio)
