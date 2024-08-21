@@ -93,7 +93,7 @@ const clothes = [
         "stock": "Disponible",
         "description": "Gorra Gymshark blanca con ajuste personalizado. Combina estilo y funcionalidad, ideal para completar tu look deportivo y protegerte del sol durante tus entrenamientos.",
         "imgsecundary": "img/Gorragymshark2B.jpeg",
-        "imgter": "img/Gorragymshark3.jpeg",
+        "imgter": "img/Gorragymshark3.jpeg.png",
         "tiempoEntrega": "3 DIAS",
         "gastoenvio": 3000,
         "valoracion": "⭐⭐⭐⭐",
